@@ -1,0 +1,102 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    
+}
+
+.carrosel {
+    width: 70%;
+    margin: auto;
+
+}
+
+@media (max-width: 768px) {
+    .carrosel {
+    width: 400px;
+    }
+}
+
+.collapse{
+    font-size: 20px;
+}
+
+.d-block {
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+}
+
+.pesquisa-viagens {
+    background-color: #f7feff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pesquisa-viagens input[type="text"],
+.pesquisa-viagens input[type="date"],
+.pesquisa-viagens input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #130c92;
+    border-radius: 5px;
+}
+
+.pesquisa-viagens button {
+    background-color:#130c92;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.principal{
+    color: #130c92;
+}
+.pesquisa-viagens{
+    color:#130c92;
+}
+
+
+footer {
+    background-color:#343A40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#rodape-conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #130c92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #rodape-conteudo {
+        padding: 0 20px;
+    }
+}
+
+
+/* Pagina de promocoes*/

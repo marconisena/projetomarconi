@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>PlanetaAventura</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="./imagem/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Promoções.html">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contatos.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="pesquisa-viagens mt-4">
+        <h2 class="mb-4">Pesquisa de Viagens</h2>
+        <form action="resultado_pesquisa.php" method="GET">
+            <input type="text" name="local" placeholder="Local de Destino" required>
+            <input type="date" name="data" required>
+            <input type="number" name="pessoas" placeholder="Número de Pessoas adultas" required>
+            <input type="number" name="crianças" placeholder="Crianças" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+
+    <!--INICIO CARDS-->
+
+
+    <div class="cards mt-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card salvador.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">Salvador</h5>
+                            <p class="card-text">Salvador, a pérola do Nordeste, encanta com suas praias deslumbrantes, cultura rica e história fascinante . #Bahia </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card Maceio.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">Marceio</h5>
+                            <p class="card-text">Explore as praias deslumbrantes de Maceió, com areias brancas e águas cristalinas. A cidade oferece uma mistura única de cultura.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card Joao Pessoa.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">João Pessoa</h5>
+                            <p class="card-text"> Férias incríveis em João Pessoa! Descubra as praias deslumbrantes, a cultura vibrante e a gastronomia deliciosa desta cidade encantadora.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card Porto di galinha.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto de Galinha</h5>
+                            <p class="card-text">Paraíso em Porto de Galinhas! Aqui, as águas cristalinas encontram praias de areias douradas, criando o cenário perfeito para suas férias dos sonhos.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card Porto Seguro.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto Seguro</h5>
+                            <p class="card-text">Porto Seguro: O Berço do Brasil! Explore a rica história, praias deslumbrantes e cultura vibrante desta cidade histórica.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagem/card rio janeiro.png" class="card-img-top" alt="Imagem de exemplo">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio de Janeiro</h5>
+                            <p class="card-text">Bem-vindo ao Rio de Janeiro, Cidade Maravilhosa! Explore praias icônicas, como Copacabana e Ipanema, suba ao Cristo Redentor para vistas.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--FINAL CARD-->
+
+    <footer>
+        <div id="rodape-conteudo">
+            <p>Ofertas e promoções:</p>
+            <form action="processar_email.php" method="POST">
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                <input class="mt-3" type="submit" value="Inscreva-se">
+            </form>
+            <p class="text-center">&copy; 2023 Planeta Aventura - Marconi Sena - RecodePro. Todos os direitos
+                reservados.
+            </p>
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
