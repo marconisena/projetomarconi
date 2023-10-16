@@ -43,8 +43,8 @@ public void setId(int id) {
 		return data;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setData(java.util.Date date) {
+		this.data = (Date) date;
 	}
 
 	public Double getPreco() {

@@ -183,7 +183,7 @@ public class PassagemDAO {
 		
 	}
 
-	public Passagem atualizarPassagem(int passagemIdAtualizar) {
+	public Passagem atualizarPassagem(Passagem passagemToUpdate, int passagemIdAtualizar) {
 		
 		return null;
 	}

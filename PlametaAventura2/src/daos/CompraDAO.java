@@ -100,7 +100,7 @@ public class CompraDAO<ArrayAtualizar> {
 		return compras;
 	}
 
-	public void AtualizarCompra(Compra compra) {
+	public void AtualizarCompra(Compra compra, int compraIdToUpdate) {
 		String sql = "UPDATE compras SET  id_usuario = ?,  id_passagem = ? " + "WHERW id = ?";
 
 		Connection con = null;
