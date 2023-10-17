@@ -1,6 +1,7 @@
 package models;
 
 import java.sql.Date;
+import java.util.Set;
 
 public class Passagem {
    private int id;
@@ -44,7 +45,7 @@ public void setId(int id) {
 	}
 
 	public void setData(java.util.Date date) {
-		this.data = (Date) date;
+	  
 	}
 
 	public Double getPreco() {

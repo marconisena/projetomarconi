@@ -101,39 +101,35 @@ public class CompraDAO<ArrayAtualizar> {
 	}
 
 	public void AtualizarCompra(Compra compra, int compraIdToUpdate) {
-		String sql = "UPDATE compras SET  id_usuario = ?,  id_passagem = ? " + "WHERW id = ?";
+	    String sql = "UPDATE compras SET id_usuario = ?, id_passagem = ? WHERE id = ?";
 
-		Connection con = null;
-		PreparedStatement pstm = null;
-		try {
-			con = Conexao.createConnectionToMySQL();
-			pstm = con.prepareStatement(sql);
-			ResultSet rs = pstm.executeQuery(); 
-			
-			pstm.setInt(1, compra.getId_passagem());
-			pstm.setInt(2, compra.getId());
-			pstm.execute();
+	    Connection con = null;
+	    PreparedStatement pstm = null;
+	    try {
+	        con = Conexao.createConnectionToMySQL();
+	        pstm = con.prepareStatement(sql);
+	        
+	        pstm.setInt(1, compra.getId_usuario()); 
+	        pstm.setInt(2, compra.getId_passagem()); 
+	        pstm.setInt(3, compraIdToUpdate); 
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (pstm != null) {
+	       
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (pstm != null) {
+	                pstm.close();
+	            }
 
-				}
-				pstm.close();
-
-				if (con != null) {
-					con.close();
-				}
-
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-
-		}
+	            if (con != null) {
+	                con.close();
+	            }
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
 	}
-
 	public void excluirCompra(int id) {
 		String sql = "DELETE FROM compra WHERE id_passagem = ?";
 		Connection con = null;
